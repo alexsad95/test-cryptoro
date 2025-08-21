@@ -30,60 +30,60 @@ const staticData = {
     productsInfo: [
       {
         id: 1,
-        image: '/images/products/product1.png',
+        image: 'images/products/product1.png',
       },
       {
         id: 2,
-        image: '/images/products/product2.png',
+        image: 'images/products/product2.png',
       },
       {
         id: 3,
-        image: '/images/products/product3.png',
+        image: 'images/products/product3.png',
       },
       {
         id: 4,
-        image: '/images/products/product4.png',
+        image: 'images/products/product4.png',
       },
       {
         id: 5,
-        image: '/images/products/product5.png',
+        image: 'images/products/product5.png',
       },
       {
         id: 6,
-        image: '/images/products/product6.png',
+        image: 'images/products/product6.png',
       },
     ],
     offers: {
       title: 'Выгодные предложения',
-      offersBackground: '/images/hero-block/offers-bg.png',
+      offersBackground: 'images/hero-block/offers-bg.png',
       productsOffers: [
         {
           id: 1,
           name: 'Аппаратный кошелёк SecuX Nifty NFT',
           price: '24 490 ₽',
           category: 'hardware-wallet',
-          image: '/images/products/product2(1).png',
+          image: 'images/products/product2(1).png',
         },
         {
           id: 2,
           name: 'Устройство для записи seed фразы Cryptotag Thor',
           price: '14 490 ₽',
           category: 'seed-storage',
-          image: '/images/products/product6(1).png',
+          image: 'images/products/product6(1).png',
         },
         {
           id: 3,
           name: 'Аппаратный ключ Yubikey 5C Nano',
           price: '2 490 ₽',
           category: 'security-key',
-          image: '/images/products/product3(1).png',
+          image: 'images/products/product3(1).png',
         },
         {
           id: 4,
           name: 'Аппаратный кошелёк Trezor T Black',
           price: '8 490 ₽',
           category: 'hardware-wallet',
-          image: '/images/products/product4(1).png',
+          image: 'images/products/product4(1).png',
         },
       ],
     },
@@ -91,12 +91,12 @@ const staticData = {
       {
         id: 1,
         title: 'Защита учётных записей',
-        image: '/images/hero-block/usb-flash.png',
+        image: 'images/hero-block/usb-flash.png',
       },
       {
         id: 2,
         title: 'Социальные сети',
-        background: '/images/hero-block/enis-bg.png',
+        background: 'images/hero-block/enis-bg.png',
         socialLinks: [
           { id: 1, platform: 'Telegram', url: '#' },
           { id: 2, platform: 'YouTube', url: '#' },
@@ -111,25 +111,25 @@ const staticData = {
       {
         id: 3,
         title: 'Актуальные статьи',
-        image: '/images/hero-block/coin.png',
+        image: 'images/hero-block/coin.png',
         buttonText: 'Читать',
       },
       {
         id: 4,
         title: 'Хранение паролей и seed-фраз',
-        image: '/images/hero-block/cryptotag.png',
+        image: 'images/hero-block/cryptotag.png',
       },
     ],
   },
   popularProducts: {
     title: 'Товары, которые покупают чаще всего',
     bannerTitle: 'Популярные категории',
-    bannerBackground: '/images/popular-products/banner-bg.png',
+    bannerBackground: 'images/popular-products/banner-bg.png',
     categories: [
       {
         id: 1,
         title: 'Аппаратные кошельки',
-        image: '/images/popular-products/flash1.png',
+        image: 'images/popular-products/flash1.png',
       },
       {
         id: 2,
@@ -140,12 +140,12 @@ const staticData = {
       {
         id: 3,
         title: 'Аксессуары',
-        image: '/images/popular-products/flash2.png',
+        image: 'images/popular-products/flash2.png',
       },
       {
         id: 4,
         title: 'U2F-токены',
-        image: '/images/popular-products/flash3.png',
+        image: 'images/popular-products/flash3.png',
       },
       {
         id: 5,
@@ -156,7 +156,7 @@ const staticData = {
       {
         id: 6,
         title: 'Чехлы и кейсы',
-        image: '/images/popular-products/flash4.png',
+        image: 'images/popular-products/flash4.png',
       },
     ],
   },
