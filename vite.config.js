@@ -11,7 +11,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true
   },
-  base: process.env.NODE_ENV === 'production' ? '/test-cryptoro/' : '/',
+  base: '/test-cryptoro/',
   publicDir: 'public',
   assetsInclude: ['**/*.woff', '**/*.woff2', '**/*.ttf']
 })
