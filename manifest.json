@@ -1,0 +1,28 @@
+{
+  "name": "CRYPTORO - Криптовалютная платформа",
+  "short_name": "CRYPTORO",
+  "description": "Современная платформа для торговли криптовалютами",
+  "start_url": "/test-cryptoro/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#17BE79",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/test-cryptoro/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/test-cryptoro/favicon/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/test-cryptoro/favicon/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
