@@ -1,0 +1,84 @@
+.card-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 45px;
+  height: 45px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  z-index: 9999;
+}
+
+.card-button:hover {
+  background: var(--primary-dark);
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+.card-button:active {
+  transform: scale(0.95);
+  background: var(--primary-darker);
+}
+
+.card-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.card-button:disabled:hover {
+  background: var(--primary-color);
+  transform: none;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.card-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Sizes */
+.card-button--small {
+  width: 32px;
+  height: 32px;
+  bottom: 12px;
+  right: 12px;
+  border-radius: 12px;
+}
+
+.card-button--small svg {
+  width: 12px;
+  height: 12px;
+}
+
+.card-button--medium {
+  width: 45px;
+  height: 45px;
+  bottom: 16px;
+  right: 16px;
+}
+
+.card-button--medium svg {
+  width: 14px;
+  height: 14px;
+}
+
+.card-button--large {
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card-button--large svg {
+  width: 20px;
+  height: 20px;
+}

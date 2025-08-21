@@ -1,0 +1,184 @@
+.popular-products {
+  padding-bottom: 90px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.popular-products--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popular-products__title {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: initial;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.popular-products--visible .popular-products__title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.popular-products__container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.popular-products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "A B B C"
+    "A D D C"
+    "F D D P"
+    "F G G P";
+  gap: 0.5rem;
+  margin: 0 auto;
+  min-height: 1000px;
+}
+
+/* Assigning grid-area for each element */
+.product-card--area-a {
+  grid-area: A;
+}
+
+.product-card--area-b {
+  grid-area: B;
+}
+
+.product-card--area-c {
+  grid-area: C;
+}
+
+.popular-products__banner--area-d {
+  grid-area: D;
+}
+
+.product-card--area-f {
+  grid-area: F;
+}
+
+.product-card--area-g {
+  grid-area: G;
+}
+
+.product-card--area-p {
+  grid-area: P;
+}
+
+/* Central banner */
+.popular-products__banner {
+  border-radius: 30px;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease-out;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.popular-products--visible .popular-products__banner {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.3s;
+}
+
+.popular-products__banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
+.popular-products__banner-title {
+  font-size: 2.25rem;
+  line-height: 1;
+  color: var(--text-white);
+  margin: 0;
+  padding: 24px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Animation with delay for each card */
+.popular-products--visible .product-card:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+.popular-products--visible .product-card:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+.popular-products--visible .product-card:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+.popular-products--visible .product-card:nth-of-type(5) {
+  transition-delay: 0.5s;
+}
+.popular-products--visible .product-card:nth-of-type(6) {
+  transition-delay: 0.6s;
+}
+.popular-products--visible .product-card:nth-of-type(7) {
+  transition-delay: 0.7s;
+}
+
+/* Responsive */
+@media (max-width: 1277px) {
+  .popular-products {
+    padding: 60px 0;
+  }
+
+  .popular-products__title {
+    font-size: 2.25rem;
+    margin-bottom: 40px;
+  }
+
+  .popular-products__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D"
+      "F"
+      "G"
+      "P";
+    gap: 16px;
+  }
+
+  .popular-products__banner {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-products {
+    padding: 40px 0;
+  }
+
+  .popular-products__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .popular-products__banner-title {
+    font-size: 1.8rem;
+    padding: 16px;
+  }
+}
