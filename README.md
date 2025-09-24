@@ -1,4 +1,4 @@
-# CRYPTORO - Cryptocurrency Platform (Test Project)
+# CRYPTORO - Cryptocurrency Platform
 
 Modern web platform for cryptocurrency trading, built with React using Vite and Zustand.
 
